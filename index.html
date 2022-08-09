@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stile.css">
+    <title>https://survey-form.freecodecamp.rocks/</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Formulario de encuesta freeCodeCamp</h1>
+        <p><em>Gracias por tomarse el tiempo para ayudarnos a mejorar la plataforma.</em></p>
+        </header>
+        <form action="">
+            <fieldset>
+                <label for="">Nombre <input placeholder="Introduzca su nombre" type="text" required></label>
+                <label for="">Correo electrónico <input placeholder="Introduce tu correo electrónico" type="email" required pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"></label>
+                <label for="">Años <span>(opcional)</span><input placeholder="Años" max="99" min="10" type="number" required></label>
+                <label for="">¿Qué opción describe mejor su función actual?
+                    <select required name="" id="">
+                        <option disabled selected value="">Seleccione el rol actual</option>
+                        <option value="">Alumno</option>
+                        <option value="">Trabajo de tiempo completo</option>
+                        <option value="">Estudiante de tiempo completo</option>
+                        <option value="">Prefiero no decirlo</option>
+                        <option value="">Otro</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label class="labels" for="">¿Recomendarías freeCodeCamp a un amigo?</label>
+                <label class="label" for=""><input name="radio" class="inline" type="radio">Definitivamente</label>
+                <label class="label" for=""><input name="radio" class="inline" type="radio">Quizás</label>
+                <label class="label" for=""><input name="radio" class="inline" type="radio">No estoy seguro</label>
+            </fieldset>
+            <fieldset>
+                <label for="">¿Cuál es tu función favorita de freeCodeCamp?
+                    <select required name="" id="">
+                        <option value="">Seleccione una opción</option>
+                        <option value="">Desafiós</option>
+                        <option value="">Proyectos</option>
+                        <option value="">Comunidad</option>
+                        <option value="">Fuente abierte</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label class="labels"for="">¿Qué te gustaría ver mejorado? <span>(Marque todo lo que corresponda)</span></label>
+                <label class="label" for=""><input class="inline" type="checkbox"> Proyectos front-end</label>
+                <label class="label" for=""><input class="inline" type="checkbox"> Proyectos de back-end</label>
+                <label class="label" for=""><input class="inline" type="checkbox"> Visualización de datos</label>
+                <label class="label" for=""><input class="inline" type="checkbox"> Desafíos</label>
+                <label class="label" for=""><input class="inline" type="checkbox"> Comunidad de código abierto</label>
+                <label class="label" for=""><input class="inline" type="checkbox"> Salas de ayuda de Gitter</label>
+                <label class="label" for=""><input class="inline" type="checkbox"> Vídeos</label>
+                <label class="label" for=""><input class="inline" type="checkbox"> Encuentros de la ciudad</label>
+                <label class="label" for=""><input class="inline" type="checkbox"> wiki</label>
+                <label class="label" for=""><input class="inline" type="checkbox"> Foro</label>
+                <label class="label" for=""><input class="inline" type="checkbox"> Cursos adicionales</label>
+            </fieldset>
+            <fieldset>
+                <label class="texlabel" for="">¿Algún comentario o sugerencia?
+                    <textarea placeholder="Escribe aquí tu comentario..." name="" id="" cols="40" rows="4"></textarea>
+                </label>
+            </fieldset>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
